@@ -1,1 +1,2 @@
 var penis;
+double getready;
