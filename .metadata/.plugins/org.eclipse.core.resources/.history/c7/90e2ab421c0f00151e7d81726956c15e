@@ -1,0 +1,31 @@
+package com.winbusiness.spoton;
+
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ManagerScreenActivity extends Activity
+{
+	ArrayList<Employee> employeeList;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_manager_screen);
+		
+		instantiateVariables(); 
+		populateEmployeeListView();
+	}
+	
+	private void instantiateVariables() 
+	{
+		employeeList = new ArrayList<Employee>();
+	}
+
+	private void populateEmployeeListView()
+	{
+		
+	}
+}
