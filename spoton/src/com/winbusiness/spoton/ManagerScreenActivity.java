@@ -11,7 +11,8 @@ import android.widget.ListView;
 
 public class ManagerScreenActivity extends Activity
 {
-	ArrayList<String> employeeList;
+	ArrayList<Employee> employeeList;
+	ArrayList<String> employeeTitle;
 	DBHandler handler;
 	
 	@Override
@@ -24,38 +25,25 @@ public class ManagerScreenActivity extends Activity
 		populateEmployeeListView();
 	}
 	
-	@SuppressWarnings("static-access")
 	private void instantiateVariables() 
 	{
-		employeeList = new ArrayList<String>();
+		employeeList = new ArrayList<Employee>();
+		employeeTitle = new ArrayList<String>();
 		handler = new DBHandler(this, null, null, 1);
 		
-		/*SQLiteDatabase db = handler.getWritableDatabase();
-		String query = "SELECT * FROM " + handler.TABLE_EMPLOYEES + " WHERE 1";
-		
-		Cursor c = db.rawQuery(query, null);
-		c.moveToFirst();
-		
-		while(!c.isAfterLast())
-		{
-			if(c.getString(c.getColumnIndex(handler.COLUMN_FIRST_NAME)) != null)
-			{
-				employeeList.add(c.getString(c.getColumnIndex(handler.COLUMN_FIRST_NAME)));
-			}
-			c.moveToNext();
-		}
-		db.close();
-*/	
 		handler.datatos(employeeList);
-		employeeList.add("whatuo");
-		employeeList.add("wasdasdhatuo");
-		employeeList.add("whatuoasdad");
+		
 		
 	}
 
 	private void populateEmployeeListView()
 	{
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.employee_items, employeeList);
+		for(Employee emp :  employeeList)
+		{
+			employeeTitle.add(emp.getFirstName() + " " + emp.getLastName());
+		}
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.employee_items, employeeTitle);
 		
 		ListView listview = (ListView) findViewById(R.id.listView1);
 		listview.setAdapter(adapter);

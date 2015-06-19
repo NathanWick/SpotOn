@@ -8,10 +8,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class DBHandler extends SQLiteOpenHelper
 {
-	private static final int DATABASE_VERSION = 3;
+	private static final int DATABASE_VERSION = 4;
 	private static final String DATABASE_NAME = "SpotOn.db";
 	
 	public static final String TABLE_EMPLOYEES = "Employees";
@@ -36,7 +37,7 @@ public class DBHandler extends SQLiteOpenHelper
 	{
 		ContentValues values = new ContentValues();
 		values.put(COLUMN_FIRST_NAME, employee.getFirstName());
-		/*values.put(COLUMN_LAST_NAME, employee.getLastName());
+		values.put(COLUMN_LAST_NAME, employee.getLastName());
 		values.put(COLUMN_PHONE_1, employee.getPhone1());
 		values.put(COLUMN_PHONE_2, employee.getPhone2());
 		values.put(COLUMN_EMAIL_ADRESS, employee.getEmailAdress());
@@ -44,7 +45,7 @@ public class DBHandler extends SQLiteOpenHelper
 		values.put(COLUMN_HIRE_DATE, employee.getHireDate().toString());
 		values.put(COLUMN_TERMINATION_DATE, employee.getTerminationDate().toString());
 		values.put(COLUMN_DEFAULT_RATE, employee.getDefaultRate());
-		values.put(COLUMN_ACCESS_CODE, employee.getAccessCode());*/
+		values.put(COLUMN_ACCESS_CODE, employee.getAccessCode());
 		
 		SQLiteDatabase db = getWritableDatabase();
 		db.insert(TABLE_EMPLOYEES, null, values);
@@ -60,29 +61,16 @@ public class DBHandler extends SQLiteOpenHelper
 	
 	public void datatos(ArrayList employeeList)
 	{
-		SQLiteDatabase db = getWritableDatabase();
-		String query = "SELECT * FROM " + TABLE_EMPLOYEES + " WHERE 1";
+		SQLiteDatabase db = this.getWritableDatabase();
+		String query = "SELECT * FROM " + TABLE_EMPLOYEES + " WHERE 1;";
 		
 		Cursor c = db.rawQuery(query, null);
 		c.moveToFirst();
 		
-		for( c.moveToFirst(); !c.isAfterLast(); c.moveToNext() ) {
-			if(c.getString(c.getColumnIndex(COLUMN_FIRST_NAME)) != null)
-			{
-				//employeeList.add(c.getString(c.getColumnIndex(COLUMN_FIRST_NAME)));
-				employeeList.add("asdasdasdasd");
-			}
-		}
-		
-		/*while(!c.isAfterLast())
+		for(c.moveToFirst(); !c.isAfterLast(); c.moveToNext() ) 
 		{
-			if(c.getString(c.getColumnIndex(COLUMN_FIRST_NAME)) != null)
-			{
-				//employeeList.add(c.getString(c.getColumnIndex(COLUMN_FIRST_NAME)));
-				employeeList.add("asdasdasdasd");
-			}
-			//c.moveToNext();
-		}*/
+			employeeList.add(new Employee(c.getString(c.getColumnIndex("firstname")), (c.getString(c.getColumnIndex("lastname"))), (c.getInt(c.getColumnIndex("accesscode")))));
+		}
 		db.close();
 	}
 

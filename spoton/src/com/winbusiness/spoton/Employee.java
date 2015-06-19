@@ -29,6 +29,20 @@ public class Employee
 		this.defaultRate = defaultRate != 0.0 ? defaultRate : 0.0;
 		this.accessCode = accessCode != 0 ? accessCode : 0;
 	}
+	
+	public Employee(String firstName, String lastName, int accessCode) 
+	{
+		this.firstName = firstName != null ? firstName : "";
+		this.lastName = lastName != null ? lastName : "";
+		phone1 = 0;
+		phone2 = 0;
+		emailAdress = "";
+		homeAdress = "";
+		hireDate = null;
+		terminationDate = null;
+		defaultRate = 0;
+		this.accessCode = accessCode != 0 ? accessCode : 0;
+	}
 
 	public String getFirstName() {
 		return firstName;

@@ -46,6 +46,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private void createViewObjects()
     {
     	handler = new DBHandler(this, null, null, 1);
+    	handler.addEmployee(new Employee("john", "scully", 1111));
+    	handler.addEmployee(new Employee("steve", "jobs", 1111));
     	
     	employeeCodes = new ArrayList<String>();
     	addCodes(employeeCodes);
