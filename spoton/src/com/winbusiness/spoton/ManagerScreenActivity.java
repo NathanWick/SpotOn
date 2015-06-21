@@ -6,6 +6,8 @@ import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -20,7 +22,7 @@ public class ManagerScreenActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_manager_screen);
-		
+
 		instantiateVariables(); 
 		populateEmployeeListView();
 	}
@@ -31,7 +33,7 @@ public class ManagerScreenActivity extends Activity
 		employeeTitle = new ArrayList<String>();
 		handler = new DBHandler(this, null, null, 1);
 		
-		handler.datatos(employeeList);
+		handler.populateEmployeeArray(employeeList);
 		
 		
 	}
@@ -48,4 +50,13 @@ public class ManagerScreenActivity extends Activity
 		ListView listview = (ListView) findViewById(R.id.listView1);
 		listview.setAdapter(adapter);
 	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		getMenuInflater().inflate(R.menu.manager_activity_action, menu);
+		return true;	
+	}
+	
+
 }

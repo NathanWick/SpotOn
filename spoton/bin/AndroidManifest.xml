@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
     <application
@@ -32,15 +32,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name=".ManagerScreenActivity"
             android:label="@string/title_activity_manager_screen"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.ManagerScreenActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Employee_editor"
+            android:label="@string/title_activity_employee_editor" >
         </activity>
     </application>
 

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -32,6 +34,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 	Button buttonEnter;
 	EditText editText1;
 	ArrayList<String> employeeCodes; 
+	ArrayList<Employee> employees; 
 	String test;
 	
     @Override
@@ -46,10 +49,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     private void createViewObjects()
     {
     	handler = new DBHandler(this, null, null, 1);
-    	handler.addEmployee(new Employee("john", "scully", 1111));
-    	handler.addEmployee(new Employee("steve", "jobs", 1111));
+    	handler.addEmployee(new Employee("david", "scully", 4285));
+    	handler.addEmployee(new Employee("dirkensen", "jobs", 9887));
     	
     	employeeCodes = new ArrayList<String>();
+    	employees = new ArrayList<Employee>();
+    	handler.populateEmployeeArray(employees);
+    	
     	addCodes(employeeCodes);
     	button1 = (Button) findViewById(R.id.button1);
     	button2 = (Button) findViewById(R.id.button2);
@@ -119,8 +125,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 		if(editText1.getText().toString().equals("4661"))
 		{
 			startActivity(new Intent(MainActivity.this, ManagerScreenActivity.class));	
+			return;
 		}
-		for(String codes : employeeCodes)
+		/*for(String codes : employeeCodes)
 		{			
 			if(editText1.getText().toString().equals(codes))
 			{
@@ -135,7 +142,33 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 			startActivity(i);
 			break;
 		}
+		else editText1.setText(""); break;*/
+		int empid = 0;
+/*		for(Employee emp : employees)
+		{			
+			if(editText1.getText().toString().equals(String.valueOf(emp.getAccessCode())))
+			{*/
+				String query = "SELECT * FROM " + handler.TABLE_EMPLOYEES + " WHERE accesscode = " + editText1.getText().toString();
+				SQLiteDatabase db = handler.getWritableDatabase();
+				Cursor c = db.rawQuery(query, null);
+				c.moveToFirst();
+				empid = c.getInt(c.getColumnIndex("id"));
+				if(c.getCount() > 0)
+				{					
+					correct = true;
+				}
+	/*		}
+		}*/
+		if(correct)
+		{
+			Intent i = new Intent(MainActivity.this, EmployeeScreenActivity.class);
+			i.putExtra("employeeId", String.valueOf(empid));
+			editText1.setText("");
+			startActivity(i);
+			break;
+		}
 		else editText1.setText(""); break;
+		
 		case (R.id.buttonBack): 
 		int length = editText1.getText().length();
 		if (length > 0)

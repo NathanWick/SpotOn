@@ -16,7 +16,7 @@ public class DBHandler extends SQLiteOpenHelper
 	private static final String DATABASE_NAME = "SpotOn.db";
 	
 	public static final String TABLE_EMPLOYEES = "Employees";
-	public static final String COLUMN_EMPLOYEE_ID = "id ";
+	public static final String COLUMN_EMPLOYEE_ID = "id";
 	public static final String COLUMN_FIRST_NAME = "firstname";
 	public static final String COLUMN_LAST_NAME = "lastname";
 	public static final String COLUMN_PHONE_1 = "phone1";
@@ -42,8 +42,8 @@ public class DBHandler extends SQLiteOpenHelper
 		values.put(COLUMN_PHONE_2, employee.getPhone2());
 		values.put(COLUMN_EMAIL_ADRESS, employee.getEmailAdress());
 		values.put(COLUMN_HOME_ADRESS, employee.getHomeAdress());
-		values.put(COLUMN_HIRE_DATE, employee.getHireDate().toString());
-		values.put(COLUMN_TERMINATION_DATE, employee.getTerminationDate().toString());
+		values.put(COLUMN_HIRE_DATE, employee.getHireDate());
+		values.put(COLUMN_TERMINATION_DATE, employee.getTerminationDate());
 		values.put(COLUMN_DEFAULT_RATE, employee.getDefaultRate());
 		values.put(COLUMN_ACCESS_CODE, employee.getAccessCode());
 		
@@ -59,7 +59,7 @@ public class DBHandler extends SQLiteOpenHelper
 		db.execSQL(query);
 	}
 	
-	public void datatos(ArrayList employeeList)
+	public void populateEmployeeArray(ArrayList employeeList)
 	{
 		SQLiteDatabase db = this.getWritableDatabase();
 		String query = "SELECT * FROM " + TABLE_EMPLOYEES + " WHERE 1;";
@@ -77,7 +77,7 @@ public class DBHandler extends SQLiteOpenHelper
 	@Override
 	public void onCreate(SQLiteDatabase db)
 	{
-		String query = "CREATE TABLE " + TABLE_EMPLOYEES + "(" + COLUMN_EMPLOYEE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_FIRST_NAME + " varchar(50), "  + COLUMN_LAST_NAME + " varchar(50), " + COLUMN_PHONE_1 + " INTEGER, " + COLUMN_PHONE_2 + " INTEGER, " + COLUMN_EMAIL_ADRESS + " varchar(100), " + COLUMN_HOME_ADRESS + " varchar(100), " + COLUMN_HIRE_DATE + " datetime, " + COLUMN_TERMINATION_DATE + " datetime, " + COLUMN_DEFAULT_RATE + " decimal(12,2), " + COLUMN_ACCESS_CODE + " INTEGER);";             																			              
+		String query = "CREATE TABLE " + TABLE_EMPLOYEES + "(" + COLUMN_EMPLOYEE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_FIRST_NAME + " varchar(50), "  + COLUMN_LAST_NAME + " varchar(50), " + COLUMN_PHONE_1 + " INTEGER, " + COLUMN_PHONE_2 + " INTEGER, " + COLUMN_EMAIL_ADRESS + " varchar(100), " + COLUMN_HOME_ADRESS + " varchar(100), " + COLUMN_HIRE_DATE + " varchar(50), " + COLUMN_TERMINATION_DATE + " varchar(50), " + COLUMN_DEFAULT_RATE + " decimal(12,2), " + COLUMN_ACCESS_CODE + " INTEGER);";             																			              
 		db.execSQL(query);
 	}
 

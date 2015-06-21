@@ -1,7 +1,11 @@
 package com.winbusiness.spoton;
 
+import java.util.ArrayList;
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,8 +24,10 @@ public class EmployeeScreenActivity extends ActionBarActivity implements
 	TextView welcomeText;
 	Intent thisIntent;
 	Bundle bundle;
-	String employeeCode;
-
+	int employeeId;
+	ArrayList<Employee> employees;
+	DBHandler handler;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,17 +38,34 @@ public class EmployeeScreenActivity extends ActionBarActivity implements
 	}
 
 	private void setWelcomeText() {
-
-		switch (employeeCode)
+		
+		String query = "SELECT * FROM " + handler.TABLE_EMPLOYEES + " WHERE id = " + employeeId;
+		SQLiteDatabase db = handler.getWritableDatabase();
+		Cursor c = db.rawQuery(query, null);
+		c.moveToFirst();
+		welcomeText.setText(c.getString(c.getColumnIndex("firstname")));
+		
+	/*	for(Employee emp : employees)
+		{
+			if(emp.getId() == employeeId)
+			{
+				welcomeText.setText("Welcome " + emp.getFirstName());
+			}
+		}*/
+		
+	/*	switch (employeeId)
 		{
 		case "1234": welcomeText.setText("Welcome Jessica!"); break;
 		case "420": welcomeText.setText("Welcome Johnny!"); break;
 		case "9999": welcomeText.setText("Welcome Rambo!"); break;
 		default: break;
-		}
+		}*/
 	}
 
 	private void createViewObjects() {
+		handler = new DBHandler(this, null, null, 1);
+		employees = new ArrayList<Employee>();
+		handler.populateEmployeeArray(employees);
 		thisIntent = getIntent();
 		bundle = thisIntent.getExtras();
 		clockIn = (Button) findViewById(R.id.buttonClockIn);
@@ -57,8 +80,8 @@ public class EmployeeScreenActivity extends ActionBarActivity implements
 		}
 
 		if (bundle != null) {
-			employeeCode = bundle.getString("code");
-			Toast.makeText(getApplicationContext(), "code is " + employeeCode, Toast.LENGTH_SHORT).show();
+			employeeId = Integer.parseInt(bundle.getString("employeeId"));
+			Toast.makeText(getApplicationContext(), "code is " + employeeId, Toast.LENGTH_SHORT).show();
 		}
 	}
 

@@ -11,12 +11,12 @@ public class Employee
 	private int phone2;
 	private String emailAdress;
 	private String homeAdress;
-	private Date hireDate;
-	private Date terminationDate;
+	private String hireDate;
+	private String terminationDate;
 	private double defaultRate;
 	private int accessCode;
 	
-	public Employee(String firstName, String lastName, int phone1, int phone2, String emailAdress, String homeAdress, Date hireDate, Date terminationDate, double defaultRate, int accessCode) 
+	public Employee(String firstName, String lastName, int phone1, int phone2, String emailAdress, String homeAdress, String hireDate, String terminationDate, double defaultRate, int accessCode) 
 	{
 		this.firstName = firstName != null ? firstName : "";
 		this.lastName = lastName != null ? lastName : "";
@@ -24,8 +24,8 @@ public class Employee
 		this.phone2 = phone2 != 0 ? phone2 : 0;
 		this.emailAdress = emailAdress != null ? emailAdress : "";
 		this.homeAdress = homeAdress != null ? homeAdress : "";
-		this.hireDate = hireDate != null ? hireDate : null;
-		this.terminationDate = terminationDate != null ? terminationDate : null;
+		this.hireDate = hireDate != null ? hireDate : "";
+		this.terminationDate = terminationDate != null ? terminationDate : "";
 		this.defaultRate = defaultRate != 0.0 ? defaultRate : 0.0;
 		this.accessCode = accessCode != 0 ? accessCode : 0;
 	}
@@ -92,19 +92,19 @@ public class Employee
 		this.homeAdress = homeAdress;
 	}
 
-	public Date getHireDate() {
+	public String getHireDate() {
 		return hireDate;
 	}
 
-	public void setHireDate(Date hireDate) {
+	public void setHireDate(String hireDate) {
 		this.hireDate = hireDate;
 	}
 
-	public Date getTerminationDate() {
+	public String getTerminationDate() {
 		return terminationDate;
 	}
 
-	public void setTerminationDate(Date terminationDate) {
+	public void setTerminationDate(String terminationDate) {
 		this.terminationDate = terminationDate;
 	}
 
@@ -124,5 +124,9 @@ public class Employee
 		this.accessCode = accessCode;
 	}
 	
+	public int getId()
+	{
+		return _id;
+	}
 	
 }
