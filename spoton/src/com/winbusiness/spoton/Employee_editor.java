@@ -4,13 +4,33 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.ViewSwitcher;
 
 public class Employee_editor extends Activity {
 
+	TextView tv; 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_employee_editor);
+		tv = (TextView) findViewById(R.id.textView2);
+		
+		tv.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				ViewSwitcher switcher = (ViewSwitcher) findViewById(R.id.viewSwitcher1);
+			    switcher.showNext(); //or switcher.showPrevious();
+			    EditText et = (EditText) findViewById(R.id.hidden_edit_view);
+			    et.setText(tv.getText());
+			    //myTV.setText("value");
+				
+			}
+		});
 	}
 
 	@Override
