@@ -4,11 +4,8 @@ import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -62,7 +59,7 @@ public class ManagerScreenActivity extends Activity
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
         case R.id.add_employee:
-            startActivity(new Intent(ManagerScreenActivity.this, Employee_editor.class));
+            startActivity(new Intent(ManagerScreenActivity.this, Employee_editor.class).putExtra("newEmp", true));
             return true;
         default:
             return super.onOptionsItemSelected(item);
