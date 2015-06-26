@@ -60,9 +60,6 @@ public class Employee_editor extends Activity {
 					if(!newEmp){
 						switcher.showNext();
 					}
-					else{
-						
-					}
 				}
 			}
 		});
