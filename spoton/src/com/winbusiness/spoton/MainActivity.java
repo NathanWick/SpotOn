@@ -20,18 +20,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
 	DBHandler handler;
-	Button button1;
-	Button button2;
-	Button button3;
-	Button button4;
-	Button button5;
-	Button button6;
-	Button button7;
-	Button button8;
-	Button button9;
-	Button button0;
-	Button buttonBackspace;
-	Button buttonEnter;
+	Button button1, button2, button3,button4,button5,button6,button7,button8,button9,button0,buttonBackspace,buttonEnter;
 	EditText editText1;
 	ArrayList<String> employeeCodes; 
 	ArrayList<Employee> employees; 
