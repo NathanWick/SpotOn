@@ -1,0 +1,16 @@
+zzzz.*
+*~
+\#*
+*.dll
+*.exe
+*.exp
+*.lib
+*.local
+*.log
+*.man
+*.nbattrs
+*.ncb
+*.obj
+*.pdb
+*.res
+*.bin
