@@ -1,5 +1,9 @@
 zzzz.*
+<<<<<<< HEAD
 *~
+=======
+*`
+>>>>>>> f7087fb5668eac3df5466d5f6de2cb790fd68bd3
 \#*
 *.dll
 *.exe
