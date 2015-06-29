@@ -15,8 +15,7 @@ public class ManagerScreenActivity extends Activity
 	ArrayList<Employee> employeeList;
 	ArrayList<String> employeeTitle;
 	DBHandler handler;
-	
-	@Override
+
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);

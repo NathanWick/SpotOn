@@ -2,11 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.winbusiness.spoton.Employee_editor" >
+    tools:context="com.winbusiness.spoton.Employee_editor">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -15,13 +18,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView1"
@@ -33,20 +36,20 @@
             <ViewSwitcher
                 android:id="@+id/viewSwitcher1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:focusable="false"
                     android:text="@string/empty"
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/hidden_edit_view"
+                    android:id="@+id/hidden_edit_view1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-                </EditText>
+                    android:layout_height="wrap_content"></EditText>
             </ViewSwitcher>
         </LinearLayout>
 
@@ -54,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView3"
@@ -63,12 +66,23 @@
                 android:text="Last Name"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/empty"
-                android:textSize="16sp" />
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/hidden_edit_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewSwitcher>
         </LinearLayout>
     </LinearLayout>
 
@@ -76,13 +90,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout1"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView5"
@@ -91,96 +105,150 @@
                 android:text="Phone 1"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/empty"
-                android:textSize="16sp" />
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/hidden_edit_view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewSwitcher>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/TextView02"
+                android:id="@+id/TextView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Phone 2"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/TextView01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/empty"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/textView7"
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email Adress"
-                android:textSize="12sp" />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/empty"
-                android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/hidden_edit_view4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewSwitcher>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home Adress"
+                android:text="Email Adress"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/empty"
-                android:textSize="16sp" />
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/hidden_edit_view5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewSwitcher>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Home Adress"
+                android:textSize="12sp" />
+
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/empty"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/hidden_edit_view6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </ViewSwitcher>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Access Code"
                 android:textSize="12sp" />
 
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/empty"
                 android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/hidden_edit_view7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ViewSwitcher>
         </LinearLayout>
     </LinearLayout>
 

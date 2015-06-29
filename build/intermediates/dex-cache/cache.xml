@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\exploded-aar\SpotOn\appcompat_v7\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="83aac5d0712bd403d51340ee4f737208faf43fb2">
+        <dex dex="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\classes-7832271424d6c21500902bf8a02752e127442b08.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\exploded-aar\SpotOn\gridlayout_v7\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="7a5968cb216e8716500382061e8b298b7bc13030">
+        <dex dex="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\classes-f9682dac85047cf0a09f3aed1b389e42e227d061.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nathan\Documents\SpotOn\spoton\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="605c447c20ca216b5556af9f215af5d4bba1b117">
+        <dex dex="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v4-c838e95730c86cb0d64fb1cdc99f1ca15fa3bff5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\exploded-aar\SpotOn\gridlayout_v7\unspecified\jars\libs\android-support-v7-gridlayout.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="0aa43af2467ce8d4ffa3d25c536d8c04cfd69552">
+        <dex dex="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v7-gridlayout-aad90a74e595a8b7e78bc4a6ee9aa1f3db7b17d7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\exploded-aar\SpotOn\appcompat_v7\unspecified\jars\libs\android-support-v7-appcompat.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="6044ad7bc085fee37a50e494aff6dd5f3869021e">
+        <dex dex="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-d72c3e4ec619fcad397c88ddeb533615d6ec5047.jar" />
+    </item>
+
+</items>
