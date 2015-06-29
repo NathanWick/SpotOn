@@ -2396,11 +2396,22 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int action_settings=0x7f0a0013;
         public static final int app_name=0x7f0a0011;
-        public static final int empty=0x7f0a0018;
+        public static final int back=0x7f0a0018;
+        public static final int button0=0x7f0a0022;
+        public static final int button1=0x7f0a0019;
+        public static final int button2=0x7f0a001a;
+        public static final int button3=0x7f0a001b;
+        public static final int button4=0x7f0a001c;
+        public static final int button5=0x7f0a001d;
+        public static final int button6=0x7f0a001e;
+        public static final int button7=0x7f0a001f;
+        public static final int button8=0x7f0a0020;
+        public static final int button9=0x7f0a0021;
+        public static final int empty=0x7f0a0023;
+        public static final int enter=0x7f0a0017;
         public static final int hello_world=0x7f0a0012;
         public static final int title_activity_employee_editor=0x7f0a0016;
         public static final int title_activity_employee_screen=0x7f0a0014;
-        public static final int title_activity_main1=0x7f0a0017;
         public static final int title_activity_manager_screen=0x7f0a0015;
     }
     public static final class style {

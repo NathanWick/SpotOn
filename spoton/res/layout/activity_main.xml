@@ -26,7 +26,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="1"
+            android:text="@string/button1"
             android:textSize="14sp" />
 
         <Button
@@ -36,7 +36,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="2"
+            android:text="@string/button2"
             android:textSize="14sp" />
 
         <Button
@@ -46,7 +46,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="3"
+            android:text="@string/button3"
             android:textSize="14sp" />
 
         <Button
@@ -56,7 +56,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="4"
+            android:text="@string/button4"
             android:textSize="14sp" />
 
         <Button
@@ -66,7 +66,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="5"
+            android:text="@string/button5"
             android:textSize="14sp" />
 
         <Button
@@ -76,7 +76,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="6"
+            android:text="@string/button6"
             android:textSize="14sp" />
 
         <Button
@@ -86,7 +86,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="7"
+            android:text="@string/button7"
             android:textSize="14sp" />
 
         <Button
@@ -96,7 +96,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="8"
+            android:text="@string/button8"
             android:textSize="14sp" />
 
         <Button
@@ -106,7 +106,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="9"
+            android:text="@string/button9"
             android:textSize="14sp" />
 
         <Button
@@ -116,7 +116,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="back"
+            android:text="@string/back"
             android:textSize="14sp" />
 
         <Button
@@ -126,7 +126,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="0"
+            android:text="@string/button0"
             android:textSize="14sp" />
 
         <Button
@@ -136,7 +136,7 @@
             app:layout_columnWeight="1"
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
-            android:text="Enter"
+            android:text="@string/enter"
             android:textSize="14sp" />
     </android.support.v7.widget.GridLayout>
 

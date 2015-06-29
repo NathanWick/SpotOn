@@ -122,7 +122,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 		case (R.id.button0): editText1.append("0"); break;
 		case (R.id.buttonEnter): 
 		Boolean correct = false;
-		if(editText1.getText().toString().equals("4661"))
+		if(editText1.getText().toString().equals("1"))
 		{
 			startActivity(new Intent(MainActivity.this, ManagerScreenActivity.class));	
 			return;
@@ -148,7 +148,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 		{			
 			if(editText1.getText().toString().equals(String.valueOf(emp.getAccessCode())))
 			{*/
-				String query = "SELECT * FROM " + handler.TABLE_EMPLOYEES + " WHERE accesscode = " + editText1.getText().toString();
+				String query = "SELECT * FROM " + DBHandler.TABLE_EMPLOYEES + " WHERE accesscode = " + editText1.getText().toString();
 				SQLiteDatabase db = handler.getWritableDatabase();
 				Cursor c = db.rawQuery(query, null);
 				c.moveToFirst();

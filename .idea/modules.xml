@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpotOn.iml" filepath="$PROJECT_DIR$/SpotOn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spoton/SpotOn-SpotOn.iml" filepath="$PROJECT_DIR$/spoton/SpotOn-SpotOn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appcompat_v7/appcompat_v7.iml" filepath="$PROJECT_DIR$/appcompat_v7/appcompat_v7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gridlayout_v7/gridlayout_v7.iml" filepath="$PROJECT_DIR$/gridlayout_v7/gridlayout_v7.iml" />
+    </modules>
+  </component>
+</project>

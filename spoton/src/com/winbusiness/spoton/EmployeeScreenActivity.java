@@ -39,7 +39,7 @@ public class EmployeeScreenActivity extends ActionBarActivity implements
 
 	private void setWelcomeText() {
 		
-		String query = "SELECT * FROM " + handler.TABLE_EMPLOYEES + " WHERE id = " + employeeId;
+		String query = "SELECT * FROM " + DBHandler.TABLE_EMPLOYEES + " WHERE id = " + employeeId;
 		SQLiteDatabase db = handler.getWritableDatabase();
 		Cursor c = db.rawQuery(query, null);
 		c.moveToFirst();
