@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Nathan/Documents/SpotOn/spoton/build/intermediates/exploded-aar/SpotOn/appcompat_v7/unspecified/res/values-v12/values-v12.xml -->
+    <!-- From: file:/D:/Workspace/SpotOn/spoton/build/intermediates/exploded-aar/SpotOn/appcompat_v7/unspecified/res/values-v12/values-v12.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="Platform.V12.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V12.AppCompat.Light"/>

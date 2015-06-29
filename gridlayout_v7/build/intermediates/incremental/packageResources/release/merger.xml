@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\res"><file path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\res\values\attrs.xml" qualifiers=""><declare-styleable name="GridLayout_Layout">
+<merger version="3"><dataSet config="main"><source path="D:\Workspace\SpotOn\gridlayout_v7\res"><file path="D:\Workspace\SpotOn\gridlayout_v7\res\values\attrs.xml" qualifiers=""><declare-styleable name="GridLayout">
+
+        <!--
+              support versions. All attributes not present in ViewGroup/View are
+              redefined in the support library namespace.
+        -->
+
+
+        <!--
+        The orientation property is not used during layout. It is only used to
+        allocate row and column parameters when they are not specified by its children's
+        layout parameters. GridLayout works like LinearLayout in this case;
+        putting all the components either in a single row or in a single column -
+        depending on the value of this flag. In the horizontal case, a columnCount
+        property may be additionally supplied to force new rows to be created when a
+        row is full. The rowCount attribute may be used similarly in the vertical case.
+        The default is horizontal.
+        -->
+        <attr name="orientation">
+
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <!-- The maximum number of rows to create when automatically positioning children. -->
+        <attr format="integer" name="rowCount"/>
+        <!-- The maximum number of columns to create when automatically positioning children. -->
+        <attr format="integer" name="columnCount"/>
+        <!--
+        When set to true, tells GridLayout to use default margins when none are specified
+        in a view's layout parameters.
+        The default value is false.
+        See {@link android.widget.GridLayout#setUseDefaultMargins(boolean)}.
+        -->
+        <attr format="boolean" name="useDefaultMargins"/>
+        <!--
+        When set to alignMargins, causes alignment to take place between the outer
+        boundary of a view, as defined by its margins. When set to alignBounds,
+        causes alignment to take place between the edges of the view.
+        The default is alignMargins.
+        See {@link android.widget.GridLayout#setAlignmentMode(int)}.
+        -->
+        <attr name="alignmentMode">
+
+            <!--
+            Align the bounds of the children.
+            See {@link android.widget.GridLayout#ALIGN_BOUNDS}.
+            -->
+            <enum name="alignBounds" value="0"/>
+            <!--
+            Align the margins of the children.
+            See {@link android.widget.GridLayout#ALIGN_MARGINS}.
+            -->
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        <!--
+        When set to true, forces row boundaries to appear in the same order
+        as row indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setRowOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="rowOrderPreserved"/>
+        <!--
+        When set to true, forces column boundaries to appear in the same order
+        as column indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setColumnOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="columnOrderPreserved"/>
+    </declare-styleable><declare-styleable name="GridLayout_Layout">
 
         <!--
               support versions. All attributes not present in MarginLayout are
@@ -115,74 +185,4 @@
             <!-- Push object to the end of its container, not changing its size. -->
             <flag name="end" value="0x00800005"/>
         </attr>
-    </declare-styleable><declare-styleable name="GridLayout">
-
-        <!--
-              support versions. All attributes not present in ViewGroup/View are
-              redefined in the support library namespace.
-        -->
-
-
-        <!--
-        The orientation property is not used during layout. It is only used to
-        allocate row and column parameters when they are not specified by its children's
-        layout parameters. GridLayout works like LinearLayout in this case;
-        putting all the components either in a single row or in a single column -
-        depending on the value of this flag. In the horizontal case, a columnCount
-        property may be additionally supplied to force new rows to be created when a
-        row is full. The rowCount attribute may be used similarly in the vertical case.
-        The default is horizontal.
-        -->
-        <attr name="orientation">
-
-            <!-- Defines an horizontal widget. -->
-            <enum name="horizontal" value="0"/>
-            <!-- Defines a vertical widget. -->
-            <enum name="vertical" value="1"/>
-        </attr>
-        <!-- The maximum number of rows to create when automatically positioning children. -->
-        <attr format="integer" name="rowCount"/>
-        <!-- The maximum number of columns to create when automatically positioning children. -->
-        <attr format="integer" name="columnCount"/>
-        <!--
-        When set to true, tells GridLayout to use default margins when none are specified
-        in a view's layout parameters.
-        The default value is false.
-        See {@link android.widget.GridLayout#setUseDefaultMargins(boolean)}.
-        -->
-        <attr format="boolean" name="useDefaultMargins"/>
-        <!--
-        When set to alignMargins, causes alignment to take place between the outer
-        boundary of a view, as defined by its margins. When set to alignBounds,
-        causes alignment to take place between the edges of the view.
-        The default is alignMargins.
-        See {@link android.widget.GridLayout#setAlignmentMode(int)}.
-        -->
-        <attr name="alignmentMode">
-
-            <!--
-            Align the bounds of the children.
-            See {@link android.widget.GridLayout#ALIGN_BOUNDS}.
-            -->
-            <enum name="alignBounds" value="0"/>
-            <!--
-            Align the margins of the children.
-            See {@link android.widget.GridLayout#ALIGN_MARGINS}.
-            -->
-            <enum name="alignMargins" value="1"/>
-        </attr>
-        <!--
-        When set to true, forces row boundaries to appear in the same order
-        as row indices.
-        The default is true.
-        See {@link android.widget.GridLayout#setRowOrderPreserved(boolean)}.
-        -->
-        <attr format="boolean" name="rowOrderPreserved"/>
-        <!--
-        When set to true, forces column boundaries to appear in the same order
-        as column indices.
-        The default is true.
-        See {@link android.widget.GridLayout#setColumnOrderPreserved(boolean)}.
-        -->
-        <attr format="boolean" name="columnOrderPreserved"/>
-    </declare-styleable></file><file path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\res\values\dimens.xml" qualifiers=""><dimen name="default_gap">8dip</dimen></file></source><source path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\build\generated\res\rs\release"/><source path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\build-types\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="float" name="layout_rowWeight"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr format="float" name="layout_columnWeight"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable><declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable></configuration></mergedItems></merger>
+    </declare-styleable></file><file path="D:\Workspace\SpotOn\gridlayout_v7\res\values\dimens.xml" qualifiers=""><dimen name="default_gap">8dip</dimen></file></source><source path="D:\Workspace\SpotOn\gridlayout_v7\build\generated\res\rs\release"/><source path="D:\Workspace\SpotOn\gridlayout_v7\build\generated\res\generated\release"/></dataSet><dataSet config="release"><source path="D:\Workspace\SpotOn\gridlayout_v7\build-types\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable><declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="float" name="layout_rowWeight"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr format="float" name="layout_columnWeight"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable></configuration></mergedItems></merger>
