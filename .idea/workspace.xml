@@ -24,6 +24,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ec807db-495e-4715-b582-1e1f0358001d" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\appcompat_v7\build\intermediates\manifests\tmp\manifestMerger4971409468721564556.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\gridlayout_v7\build\intermediates\manifests\tmp\manifestMerger5226991116763222434.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\appcompat\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\gridlayout\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\gridlayout\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\gridlayout\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\gridlayout\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\android\support\v7\gridlayout\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\DBHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\Employee.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\EmployeeScreenActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\Employee_editor.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\ManagerScreenActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\classes\debug\com\winbusiness\spoton\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\dex\debug\classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v4-c838e95730c86cb0d64fb1cdc99f1ca15fa3bff5.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-d72c3e4ec619fcad397c88ddeb533615d6ec5047.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\android-support-v7-gridlayout-aad90a74e595a8b7e78bc4a6ee9aa1f3db7b17d7.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\classes-7832271424d6c21500902bf8a02752e127442b08.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\intermediates\pre-dexed\debug\classes-f9682dac85047cf0a09f3aed1b389e42e227d061.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\outputs\apk\SpotOn-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nathan\Documents\SpotOn\spoton\build\outputs\apk\SpotOn-debug.apk" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appcompat_v7/build/outputs/aar/appcompat_v7-debug.aar" afterPath="$PROJECT_DIR$/appcompat_v7/build/outputs/aar/appcompat_v7-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appcompat_v7/build/outputs/aar/appcompat_v7-release.aar" afterPath="$PROJECT_DIR$/appcompat_v7/build/outputs/aar/appcompat_v7-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appcompat_v7/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/appcompat_v7/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appcompat_v7/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/appcompat_v7/build/intermediates/bundles/release/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/bundles/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/bundles/release/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spoton/build/intermediates/exploded-aar/SpotOn/appcompat_v7/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/spoton/build/intermediates/exploded-aar/SpotOn/appcompat_v7/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spoton/build/intermediates/exploded-aar/SpotOn/gridlayout_v7/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/spoton/build/intermediates/exploded-aar/SpotOn/gridlayout_v7/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gridlayout_v7/build/outputs/aar/gridlayout_v7-debug.aar" afterPath="$PROJECT_DIR$/gridlayout_v7/build/outputs/aar/gridlayout_v7-debug.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gridlayout_v7/build/outputs/aar/gridlayout_v7-release.aar" afterPath="$PROJECT_DIR$/gridlayout_v7/build/outputs/aar/gridlayout_v7-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appcompat_v7/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/appcompat_v7/build/intermediates/resources/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/gridlayout_v7/build/intermediates/resources/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spoton/build/intermediates/resources/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/spoton/build/intermediates/resources/resources-debug-androidTest.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spoton/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/spoton/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spoton/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/spoton/build/intermediates/incremental/mergeResources/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SpotOn.iws" />
@@ -81,7 +150,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3069,7 +3140,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3118,7 +3191,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="86" column="83" selection-start-line="86" selection-start-column="83" selection-end-line="86" selection-end-column="83" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3167,7 +3242,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3227,7 +3304,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="125" column="34" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
