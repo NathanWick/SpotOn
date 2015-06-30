@@ -2,6 +2,7 @@ package com.winbusiness.spoton;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.widget.ViewSwitcher;
 
 public class Employee_editor extends Activity implements android.view.View.OnFocusChangeListener, android.view.View.OnClickListener {
 
+    DBHandler handler;
     Intent intent;
     boolean newEmp;
     TextView tv1, tv2, tv3, tv4, tv5, tv6, tv7;
@@ -31,6 +33,7 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
     }
 
     private void instantiateVariables() {
+        handler = new DBHandler(this, null, null, 1);
         newEmp = false;
         intent = getIntent();
         newEmp = intent.getBooleanExtra("newEmp", false);
@@ -63,7 +66,6 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
         et7 = (EditText) findViewById(R.id.hidden_edit_view7);
         switcher7 = (ViewSwitcher) findViewById(R.id.viewSwitcher7);
     }
-
 
     @Override
     public void onFocusChange(View v, boolean hasFocus) {
@@ -100,7 +102,6 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
             }
         }
     }
-
 
     @Override
     public void onClick(View v) {
@@ -166,53 +167,26 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
         et6.setOnFocusChangeListener(this);
         tv7.setOnClickListener(this);
         et7.setOnFocusChangeListener(this);
-		/*tv1.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-
-
-
-			}
-		});*/
-
-		/*et.setOnFocusChangeListener(new OnFocusChangeListener() {
-
-			@Override
-			public void onFocusChange(View v, boolean hasFocus) {
-
-				Toast toast = Toast.makeText(getApplicationContext(), String.valueOf(hasFocus), Toast.LENGTH_SHORT);
-				toast.show();
-				if (!hasFocus) {
-
-					if (!newEmp) {
-
-					}
-				}
-				if (hasFocus) {
-				}
-			}
-		});*/
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.employee_editor, menu);
+        getMenuInflater().inflate(R.menu.employee_editor_action, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.save_employee) {
+            saveEmployee();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
-
+    private void saveEmployee(){
+        SQLiteDatabase db = handler.getWritableDatabase();
+        handler.addEmployee(new Employee(tv1.getText().toString(), tv2.getText().toString(), Integer.parseInt(tv3.getText().toString()), Integer.parseInt(tv4.getText().toString()), tv5.getText().toString(), tv6.getText().toString(), "", "", 0, Integer.parseInt(tv7.getText().toString())));
+    }
 }

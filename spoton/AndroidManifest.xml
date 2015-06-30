@@ -45,7 +45,8 @@
         </activity>
         <activity
             android:name="com.winbusiness.spoton.Employee_editor"
-            android:label="@string/title_activity_employee_editor" >
+            android:label="@string/title_activity_employee_editor"
+            android:theme="@android:style/Theme.Holo.Light">
         </activity>
     </application>
 
