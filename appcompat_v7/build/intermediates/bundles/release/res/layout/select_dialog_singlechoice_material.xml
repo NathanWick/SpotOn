@@ -27,4 +27,4 @@
     android:paddingRight="?attr/dialogPreferredPadding"
     android:checkMark="?android:attr/listChoiceIndicatorSingle"
     android:ellipsize="marquee" />
-<!-- From: file:/D:/Workspace/SpotOn/appcompat_v7/res/layout/select_dialog_singlechoice_material.xml -->
+<!-- From: file:/Users/Bradley/Workspace/SpotOn/appcompat_v7/res/layout/select_dialog_singlechoice_material.xml -->
