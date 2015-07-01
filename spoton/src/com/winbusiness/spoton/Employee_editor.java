@@ -1,6 +1,7 @@
 package com.winbusiness.spoton;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -70,6 +72,7 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
     @Override
     public void onFocusChange(View v, boolean hasFocus) {
         if (!hasFocus) {
+            ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(v.getWindowToken(), 0);
             switch (v.getId()) {
                 case (R.id.hidden_edit_view1):
                     tv1.setText(et1.getText());
@@ -105,6 +108,7 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
 
     @Override
     public void onClick(View v) {
+        ((InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE)).toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY);
         switch (v.getId()) {
             case (R.id.textView2):
                 switcher1.showPrevious();
