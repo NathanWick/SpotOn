@@ -15,7 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+import java.sql.*;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
@@ -60,6 +60,24 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         for (Button b : buttons) {
             b.setOnClickListener(this);
             b.setTextColor(getResources().getColor(R.color.numberColor));
+        }
+    }
+
+    public class Java2MySql {
+        public void dbsetup(String[] args) {
+            String url = "";
+            String dbName = "employees";
+            String driver = "com.mysql.jdbc.Driver";
+            String userName = "TimeOut";
+            String password = "tavern";
+            try {
+                Class.forName(driver).newInstance();
+                Connection conn = DriverManager.getConnection(url+dbName,userName,password);
+
+                conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
