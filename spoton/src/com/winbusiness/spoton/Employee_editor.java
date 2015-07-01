@@ -187,6 +187,7 @@ public class Employee_editor extends Activity implements android.view.View.OnFoc
 
     private void saveEmployee(){
         SQLiteDatabase db = handler.getWritableDatabase();
+
         handler.addEmployee(new Employee(tv1.getText().toString(), tv2.getText().toString(), Integer.parseInt(tv3.getText().toString()), Integer.parseInt(tv4.getText().toString()), tv5.getText().toString(), tv6.getText().toString(), "", "", 0, Integer.parseInt(tv7.getText().toString())));
     }
 }
