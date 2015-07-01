@@ -27,7 +27,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button1"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button2"
@@ -37,7 +37,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button2"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button3"
@@ -47,7 +47,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button3"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button4"
@@ -57,7 +57,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button4"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button5"
@@ -67,7 +67,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button5"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button6"
@@ -77,7 +77,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button6"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button7"
@@ -87,7 +87,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button7"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button8"
@@ -97,7 +97,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button8"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/button9"
@@ -107,7 +107,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button9"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/buttonBack"
@@ -117,7 +117,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/back"
-            android:textSize="14sp" />
+            android:textSize="17sp" />
 
         <Button
             android:id="@+id/button0"
@@ -127,7 +127,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/button0"
-            android:textSize="14sp" />
+            android:textSize="21sp" />
 
         <Button
             android:id="@+id/buttonEnter"
@@ -137,7 +137,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:padding="25dp"
             android:text="@string/enter"
-            android:textSize="14sp" />
+            android:textSize="17sp" />
     </android.support.v7.widget.GridLayout>
 
     <EditText

@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item 
         android:id="@+id/add_employee"
-        android:icon="@drawable/abc_btn_radio_to_on_mtrl_015"
+        android:icon="@drawable/ic_add_black_24dp"
         android:title="add_title"
         android:showAsAction="always"/>
     
